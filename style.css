@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #088a8a;
+    color: rgb(216, 129, 238);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#game {
+    width: 320px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 20px;
+}
+
+.btn {
+    width: 150px;
+    height: 150px; 
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+#green { background: #04e76a; }
+#red { background: #ee0713; }
+#yellow { background: #eff304; }
+#blue { background: #0783e9; }
+
+.active {
+    opacity: 1 !important;
+    box-shadow: 0 0 40px white;
+}
+
+#startBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
